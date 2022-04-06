@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editFIRID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:hint="Enter FIR ID"/>
+
+    <EditText
+        android:id="@+id/editInfo"
+        android:layout_below="@+id/editFIRID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:hint="Enter information"/>
+
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editInfo"
+        android:layout_centerHorizontal="true"
+        android:text="save"
+        android:layout_margin="40dp"
+        android:onClick="save"/>
+
+    <EditText
+        android:id="@+id/editLoadfirid"
+        android:layout_width="match_parent"
+        android:layout_below="@id/button_save"
+        android:layout_height="wrap_content"
+        android:hint="Load FIR ID"
+        android:layout_margin="40dp"/>
+
+    <Button
+        android:id="@+id/button_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_save"
+        android:layout_below="@+id/editLoadfirid"
+        android:layout_marginTop="17dp"
+        android:text="load"
+        android:onClick="load"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/firload"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button_load"
+        />
+</RelativeLayout>
